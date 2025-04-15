@@ -22,3 +22,8 @@ message ProductsResponse {
     string author = 6; //Nome do autor ou fabricante (útil para livros, por exemplo)
 }
 
+//define a estrutura da resposta do metodo SearchAllProducts
+//contem uma lista de produtos (repeated = array/lista)
+message ProductsResponse {
+    repeated ProductsResponse products = 1; //lista de produtos retornados
+}
